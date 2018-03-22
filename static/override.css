@@ -1,0 +1,50 @@
+.mapwrapper {
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+  padding-bottom: 50%;
+}
+
+.mapdiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px dotted #ccc;
+}
+
+.ammapDescriptionWindow {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: Verdana;
+  font-size: 10px;
+  opacity: 0.95;
+  overflow: auto;
+}
+
+.ammapDescriptionWindow a {
+	color: #0F7CB1;
+	overflow: visible;
+}
+
+.ammapDescriptionTitle {
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/*
+header.masthead {
+	background-color: #E5E8E8;
+	opacity: 0.5;
+}
+
+header.masthead .overlay {
+	background-color: #E5E8E8;
+}
+
+header.masthead .site-heading h1 {
+	color: #000000;
+	opacity: 1;
+}
+*/
