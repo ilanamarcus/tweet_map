@@ -12,6 +12,12 @@ var usa = require("./countries/usa")
 var canada = require("./countries/canada")
 var russia = require("./countries/russia")
 var hongkong = require("./countries/hongkong")
+var japan = require("./countries/japan")
+var ireland = require("./countries/ireland")
+var indonesia = require("./countries/indonesia")
+var mexico = require("./countries/mexico")
+var costarica = require("./countries/costarica")
+var peru = require("./countries/peru")
 
 
 module.exports = {
@@ -29,7 +35,13 @@ module.exports = {
 		usa,
 		canada,
 		russia,
-		hongkong
+		hongkong,
+		japan,
+		ireland,
+		indonesia,
+		mexico,
+		costarica,
+		peru
   	],
 
 }
