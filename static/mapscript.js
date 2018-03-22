@@ -51,7 +51,8 @@ AmCharts.makeChart( "mapdiv", {
     "align": "right",
     "position": "bottom",
     "maxColumns": 1,
-    "right": 20
+    "right": 20,
+    "width": 700
   },
 
 
