@@ -1,4 +1,5 @@
 
+var settings = require("./settings")
 const data = require("./data.js")
 AmCharts.makeChart( "mapdiv", {
   /**
@@ -37,7 +38,22 @@ AmCharts.makeChart( "mapdiv", {
   "zoomControl": {
      "zoomControlEnabled": true,
      "homeButtonEnabled": true
-  }
+  },
+
+  "legend": {
+    "divId": "legend",
+    "data": [
+      {"title": "Country has right to be forgotten legislation or precedent", "color": settings.yes},
+      {"title": "Country's right to be forgotten is in progress or inconsistent", "color": settings.maybe},
+      {"title": "Country has no right to be forgotten", "color": settings.no}
+
+    ],
+    "align": "right",
+    "position": "bottom",
+    "maxColumns": 1,
+    "right": 20
+  },
+
 
   /**
    * let's say we want a small map to be displayed, so let's create it
