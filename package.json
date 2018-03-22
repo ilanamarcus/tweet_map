@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "echo \"Started\"",
+    "start": "browserify static/mapscript.js -o static/bundle.js",
     "build": "browserify static/mapscript.js -o static/bundle.js",
     "postinstall": "browserify static/mapscript.js -o static/bundle.js"
   },
