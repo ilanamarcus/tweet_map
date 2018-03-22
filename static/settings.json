@@ -1,5 +1,6 @@
 {
-	"yes": "#00CC00",
-	"no": "#0000CC",
+	"yes": "#1350B5",
+	"no": "#F9DC2B",
+	"maybe": "#4AB116",
 	"selectedArea": "#AED6F1"
 }
