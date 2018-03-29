@@ -1,7 +1,7 @@
 
 var settings = require("./settings")
 //const data = require("./data.js")
-const request = require('request');
+const request = require('superagent');
 
 var data = []
 
@@ -67,12 +67,12 @@ let chart = AmCharts.makeChart( "mapdiv", {
 } );
 
 
-request('http://localhost:8080/data', function(err, res, body) {
+request.get('data')
+  .end((err, res) => {
     if (err) {
       console.log(err);
     } else {
-      console.log(body);
-      chart.dataProvider.areas = JSON.parse(body);
+      chart.dataProvider.areas = JSON.parse(res.text);
       chart.validateData();
     }
-})
+  });
