@@ -1,7 +1,11 @@
 
 var settings = require("./settings")
-const data = require("./data.js")
-AmCharts.makeChart( "mapdiv", {
+//const data = require("./data.js")
+const request = require('request');
+
+var data = []
+
+let chart = AmCharts.makeChart( "mapdiv", {
   /**
    * this tells amCharts it's a map
    */
@@ -21,7 +25,7 @@ AmCharts.makeChart( "mapdiv", {
     
 
     "map": "worldLow",
-    "areas": data.countries,
+    "areas": data,
     "selectedColor" : "#AED6F1"
   },
 
@@ -61,3 +65,14 @@ AmCharts.makeChart( "mapdiv", {
    */
   //"smallMap": {}
 } );
+
+
+request('http://localhost:8080/data', function(err, res, body) {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log(body);
+      chart.dataProvider.areas = JSON.parse(body);
+      chart.validateData();
+    }
+})

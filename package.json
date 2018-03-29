@@ -14,10 +14,13 @@
   "dependencies": {
     "ammaps": "^3.14.5",
     "browserify": "^16.1.1",
+    "convert-csv-to-json": "0.0.13",
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
     "get-twitter-bearer-token": "^1.0.0",
+    "handlebars": "^4.0.11",
     "path": "^0.12.7",
+    "request": "^2.85.0",
     "twitter": "^1.7.1"
   }
 }
